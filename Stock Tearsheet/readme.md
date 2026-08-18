@@ -16,4 +16,6 @@ docs
 
   Next will work on calculating the Sharpe ratio.
 
-  
+
+8/18/26  
+Shapre ratio has been properly implemented after much trial and error. i had to go back through all pervious functions and refactor code as I calculated things differently for each function, now they all return compatible units that i can use in new functions. my next goal is to make the sortino ratio function but before that i have identified a problem that will effect the program as it gets larger. I realized that the way i am currently handling the user's portfolio is by taking the same of the stock and then passing it into the function. this is actually very wrong as it causes me to have to call yf.Ticker(stock) and stock.history on each function. the solution i will use is to create another function that takes the plaintext of the stock and then returns the data frame from yf.Ticker().history. This is because when i call history it makes a API call and attempts to connect to the internet, i have to limit the amount of times i call this and make the history available to all functions.
