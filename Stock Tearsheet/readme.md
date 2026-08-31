@@ -23,3 +23,15 @@ Shapre ratio has been properly implemented after much trial and error. i had to 
 8/27/26
 
 all functions aside from cagr have been implemented. I have now completed my goal of getting the base functionality of the app done. now my goal is to optimize the program to avoid redundancy and wasted time. right now many of my functions make redundant calls to the yfinance api and other values used in functions. to remedy this I have been the process of creating a class to store all of the data and methods. this is more efficient design as when i eventually move to making the streamlit app, all i will have to do is provide data form the class's methods instead of running new calculations for each item.
+
+8/30/26
+
+I managed to get all functions that I had previously made into a new class known as StockInfo. This took some time to learn how to do as I took time refamiliarize myself with classes and their quirks. Now all the calculations happen in one object and there are no unnecessary api calls for yfinance. 
+
+However, I realized one major issue that I had overlooked this whole project. While researching this project in the initial phases, I came to learn that stock returns are often saved into csv files. I took a mental note of this but did not look further into what that actually meant. The reason the type of file is important is because in real life, real people have portfolios with many different stocks and funds. Currently my program only analyzes one stock, however I must now account for many more factors when it comes to most metrics. For example: 
+<ol>
+  <li>Implement methods that can either: take multiple stocks or must output data that can take into account the proportions of the portfoilo</li>
+  <li>Implement method to parse CSV file correctly</li>
+  <li>Change time space used in all function (default is 1 year, but returns can be any time period)</li>
+  <li>Follow common conventions in the finance world</li>
+</ol>
