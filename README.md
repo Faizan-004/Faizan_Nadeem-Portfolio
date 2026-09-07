@@ -1,7 +1,5 @@
 # Faizan_Nadeem-Portfolio
-Collection of all Cybersecurity related projects I have done
 
-All "G-<name>" files are practicle examples/assignments from the Google Cyber Security certificate course
 
 ## Stock Analysis Sheet (In Progress)
 
