@@ -1,7 +1,8 @@
 # Faizan_Nadeem-Portfolio
 
-
-## Stock Analysis Sheet (In Progress)
+## Smart Travel MCP 
+## Virtual Home Network Sim
+## Protfolio Analysis Webapp (In Progress)
 
 A performance analysis sheet with many of the main metrics that professionals use to determine the value of a portfolio.
 
@@ -9,3 +10,5 @@ A performance analysis sheet with many of the main metrics that professionals us
 - 
 
 **Status:** Planning / In active development
+
+## Pet Adoption Website 
